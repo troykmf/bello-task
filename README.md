@@ -1,16 +1,10 @@
-# bello_task
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# bello-task
+A 3 Screen E-commerce flutter application
+For this project, The tech stack used are;
+-  Flutter and Dart
+  
+Setup/Run Instructions
+-  Open the project folder in visual studio code or android studio
+-  Under the folder lib, the main.dart file is the entry point of the flutter application, you can use the Run button or use f5 to run the app.
+-  Make sure you're connected to either a simulator, emulator or a physical android device
+  
