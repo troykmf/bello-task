@@ -1,9 +1,8 @@
-import 'package:bello_task/core/constants/app_colors.dart';
+import 'package:bello_task/core/constants/app_bar.dart';
 import 'package:bello_task/features/home_page/product_card.dart';
 import 'package:bello_task/features/view_models/product_vm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends ConsumerWidget {
@@ -27,73 +26,12 @@ class HomePage extends ConsumerWidget {
                 horizontal: screenWidth * 0.04,
                 vertical: screenHeight * 0.01,
               ),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width: 56,
-                        padding: EdgeInsets.symmetric(
-                          horizontal: screenWidth * 0.01,
-                          vertical: screenHeight * 0.005,
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.lightBlue.shade200,
-                          // borderRadius: BorderRadius.circular(6),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Full Logo',
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: screenWidth * 0.02,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      ),
-                      // const Spacer(),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            'DELIVERY ADDRESS',
-                            style: TextStyle(
-                              fontSize: screenWidth * 0.025,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(width: 0),
-                      // const Spacer(),
-                      SvgPicture.asset(
-                        'assets/svgs/notifi.svg',
-                        color: Colors.grey[600],
-                      ),
-                      // Icon(
-                      //   Icons.notifications_outlined,
-                      //   size: screenWidth * 0.06,
-                      //   color: Colors.grey[600],
-                      // ),
-                    ],
-                  ),
-                  Text(
-                    'Umuezike Road, Oyo State',
-                    style: TextStyle(
-                      fontSize: screenWidth * 0.032,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black87,
-                    ),
-                  ),
-                ],
+              child: CustomAppBar(
+                screenWidth: screenWidth,
+                screenHeight: screenHeight,
               ),
             ),
-
-            // SizedBox(height: screenHeight * 0.005),
-            SizedBox(height: screenHeight * 0.02),
+            SizedBox(height: screenHeight * 0.01),
 
             // Search Bar
             Container(
@@ -101,10 +39,6 @@ class HomePage extends ConsumerWidget {
                 horizontal: screenWidth * 0.04,
                 vertical: screenHeight * 0.0001,
               ),
-              // padding: EdgeInsets.symmetric(
-              //   horizontal: screenWidth * 0.04,
-              //   // vertical: screenHeight * 0.00,
-              // ),
               height: screenHeight * 0.05,
               width: screenWidth,
               decoration: BoxDecoration(

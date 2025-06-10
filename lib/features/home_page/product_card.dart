@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 class ProductCard extends ConsumerWidget {
   final Product product;
 
-  const ProductCard({required this.product});
+  const ProductCard({required this.product, super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -42,13 +42,6 @@ class ProductCard extends ConsumerWidget {
                   ),
                   child: Center(
                     child: Image.asset(product.image, fit: BoxFit.cover),
-
-                    // Text(
-                    //   product.image,
-                    //   style: GoogleFonts.ibmPlexSans(
-                    //     fontSize: screenWidth * 0.12,
-                    //   ),
-                    // ),
                   ),
                 ),
               ),

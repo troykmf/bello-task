@@ -75,13 +75,11 @@ class ProductDetailPage extends ConsumerWidget {
                       // const Spacer(),
                       SvgPicture.asset(
                         'assets/svgs/notifi.svg',
-                        color: Colors.grey[600],
+                        colorFilter: ColorFilter.mode(
+                          Colors.grey[600]!,
+                          BlendMode.srcIn,
+                        ),
                       ),
-                      // Icon(
-                      //   Icons.notifications_outlined,
-                      //   size: screenWidth * 0.06,
-                      //   color: Colors.grey[600],
-                      // ),
                     ],
                   ),
                   Text(
